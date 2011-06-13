@@ -1,6 +1,11 @@
 Hakyll examples
 ===============
 
+In this repo, you can find a number of examples for the [hakyll][] static site
+compiler.
+
+[hakyll]: http://jaspervdj.be/hakyll
+
 In order of increasing complexity:
 
     brochure/       A very simple brochure site
@@ -8,7 +13,3 @@ In order of increasing complexity:
     simpleblog/     A simple blog
     feedblog/       Adds an RSS feed to the simple blog
     tagblog/        Adds tags to the simple blog
-
-In no real category:
-
-    hakyll/         The hakyll website (some custom pandoc options)
