@@ -89,6 +89,7 @@ makeTagList tag posts =
         >>> arr (setField "title" ("Posts tagged &#8216;" ++ tag ++ "&#8217;"))
         >>> applyTemplateCompiler "templates/posts.html"
         >>> applyTemplateCompiler "templates/default.html"
+        >>> relativizeUrlsCompiler
 
 feedConfiguration :: FeedConfiguration
 feedConfiguration = FeedConfiguration
