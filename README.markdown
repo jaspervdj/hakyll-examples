@@ -13,3 +13,5 @@ In order of increasing complexity:
     simpleblog/     A simple blog
     feedblog/       Adds an RSS feed to the simple blog
     tagblog/        Adds tags to the simple blog
+    timedblog/      Adds conditional page generation and timed releases
+                    to the simple blog.
