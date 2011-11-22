@@ -14,5 +14,5 @@ main = hakyll $ do
                 "default.csl" "references.bib" >>>
             arr (fmap writePandoc)
 
-    match "default.csl"    $ compile $ cslCompiler
-    match "references.bib" $ compile $ referencesCompiler
+    match "default.csl"    $ compile cslCompiler
+    match "references.bib" $ compile biblioCompiler
