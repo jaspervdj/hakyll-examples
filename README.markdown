@@ -14,3 +14,5 @@ More or less in order of increasing complexity:
     feedblog/       Adds an RSS feed to the simple blog
     tagblog/        Adds tags to the simple blog
     references/     Explains how to use a bibliography
+    timedblog/      Adds conditional page generation and timed releases
+                    to the simple blog.
