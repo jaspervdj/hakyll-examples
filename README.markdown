@@ -16,3 +16,4 @@ More or less in order of increasing complexity:
     references/     Explains how to use a bibliography
     timedblog/      Adds conditional page generation and timed releases
                     to the simple blog.
+    multilingual/   A simple implementation of a multilingual website
