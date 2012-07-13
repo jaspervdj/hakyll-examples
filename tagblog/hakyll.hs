@@ -96,5 +96,6 @@ feedConfiguration = FeedConfiguration
     { feedTitle       = "SimpleBlog RSS feed."
     , feedDescription = "A simple demo of an RSS feed created with Hakyll."
     , feedAuthorName  = "Jasper Van der Jeugt"
+    , feedAuthorEmail = "test@example.com"
     , feedRoot        = "http://example.com"
     }
