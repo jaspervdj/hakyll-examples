@@ -9,13 +9,13 @@ import Data.Either (rights)
 import Data.Maybe
 import Data.Time
 import Data.Time.Format
-import Locale
+import System.Locale
 
 import Hakyll
 
 instance Writable b => Writable (Either a b) where
-  write p (Right b) = write p b
-  write _ _ = return ()
+    write p (Right b) = write p b
+    write _ _ = return ()
 
 main :: IO ()
 main = hakyll $ do
@@ -91,4 +91,3 @@ isPagePublishedYet = arr (\(p,t) -> if isPublishedYet p t then pub p else unpub 
   where
     pub p = Right $ setField "published" "true" p
     unpub p = Left $ setField "published" "false" p
-
