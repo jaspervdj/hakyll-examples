@@ -39,7 +39,7 @@ main = hakyll $ do
     create "index.html" $ constA mempty
         >>> arr (setField "title" "Home")
         >>> requireA "tags" (setFieldA "tagcloud" (renderTagCloud'))
-        >>> requireAllA "posts/*" (id *** arr (take 3 . reverse . sortByBaseName) >>> addPostList)
+        >>> requireAllA "posts/*" (id *** arr (take 3 . reverse . chronological) >>> addPostList)
         >>> applyTemplateCompiler "templates/index.html"
         >>> applyTemplateCompiler "templates/default.html"
         >>> relativizeUrlsCompiler
@@ -75,7 +75,7 @@ main = hakyll $ do
 --
 addPostList :: Compiler (Page String, [Page String]) (Page String)
 addPostList = setFieldA "posts" $
-    arr (reverse . sortByBaseName)
+    arr (reverse . chronological)
         >>> require "templates/postitem.html" (\p t -> map (applyTemplate t) p)
         >>> arr mconcat
         >>> arr pageBody
