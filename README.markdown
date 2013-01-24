@@ -1,19 +1,10 @@
-Hakyll examples
-===============
+This repo is deprecated
+=======================
 
-In this repo, you can find a number of examples for the [Hakyll][] static site
-compiler.
+Since the
+[release of Hakyll 4](http://jaspervdj.be/posts/2013-01-16-hakyll-4.0.html),
+this repo is no longer maintained. The examples are now contained in the
+tutorial for Hakyll 4.
 
-[Hakyll]: http://jaspervdj.be/hakyll
-
-More or less in order of increasing complexity:
-
-    brochure/       A very simple brochure site
-    morepages/      Slightly more complicated brochure site with partials
-    simpleblog/     A simple blog
-    feedblog/       Adds an RSS feed to the simple blog
-    tagblog/        Adds tags to the simple blog
-    references/     Explains how to use a bibliography
-    timedblog/      Adds conditional page generation and timed releases
-                    to the simple blog.
-    multilingual/   A simple implementation of a multilingual website
+If, for some reason, you still want to see the Hakyll 3 examples, checkout the
+`hakyll3` branch of this repo.
